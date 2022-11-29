@@ -13,7 +13,7 @@ quarkus create app \
     org.acme:my-app:1.0
 ```
 
-2. Add the [OpenAPI file from this repo](https://github.com/ricardozanini/quarkus-openapi-gen-showcase/blob/main/src/main/openapi/openweather.yaml) to `src/main/openapi` directory
+2. Add the [OpenAPI file from this repo](https://github.com/ricardozanini/quarkus-openapi-gen-showcase/blob/main/src/main/openapi/openweather.yaml) to the `src/main/openapi` directory
 
 3. Run `mvn clean install` to generate the REST stubs for you
 
