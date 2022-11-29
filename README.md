@@ -2,6 +2,33 @@
 
 Small example of the [Quarkus OpenAPI Generator extension](https://github.com/quarkiverse/quarkus-openapi-generator) usage.
 
+To create this project from the ground up:
+
+1. Run quarkus CLI to bootstrap the project:
+
+```shell
+quarkus create app \
+    -x=quarkus-openapi-generator \
+    --no-code \
+    org.acme:my-app:1.0
+```
+
+2. Add the [OpenAPI file from this repo](https://github.com/ricardozanini/quarkus-openapi-gen-showcase/blob/main/src/main/openapi/openweather.yaml) to `src/main/openapi` directory
+
+3. Run `mvn clean install` to generate the REST stubs for you
+
+4. Now your IDE should recognize the generated code in `target/generated-sources/open-api-yaml` folder
+
+5. Use the `CurrentWeatherDataApi` class in your code. You can refer to [`WeatherResource.java`](https://github.com/ricardozanini/quarkus-openapi-gen-showcase/blob/main/src/main/java/org/acme/openweather/WeatherResource.java#L23) as a usage example
+
+6. Go to the [OpenWeatherMap website](https://openweathermap.org/api) and grab an API key. Add it to your `application.property` file:
+
+```properties
+quarkus.openapi-generator.openweather_yaml.auth.app_id.api-key=<your key here>
+```
+
+For any questions, please open an issue in this repo, I'll be glad to help you with it. Also, this project can be used as a reference to write your own tests.
+
 <details>
   <summary>How to run this application</summary>
 
