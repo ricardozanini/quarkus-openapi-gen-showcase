@@ -1,4 +1,9 @@
-# quarkus-podcast Project
+# Quarkus OpenAPI Generator Showcase
+
+Small example of the [Quarkus OpenAPI Generator extension](https://github.com/quarkiverse/quarkus-openapi-generator) usage.
+
+<details>
+  <summary>How to run this application</summary>
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
@@ -47,5 +52,4 @@ You can then execute your native executable with: `./target/quarkus-podcast-1.0-
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
 
-## Related Guides
-
+</details
